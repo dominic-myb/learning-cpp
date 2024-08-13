@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 int main(){
 	int array[] = {2, 4, 5, 7, 87, 98, 99};
 	int arrayLen = sizeof(array) / sizeof(array[0]);

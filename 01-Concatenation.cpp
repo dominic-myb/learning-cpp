@@ -7,16 +7,19 @@ int main()
     bool isMale = true;
     char bloodType = 'A';
     std::string name = "Dominic";
-    std::cout<<"My name is " << name << std::endl;
-    std::cout<<"I am " << age << " years old." << std::endl;
-    std::cout<<"My average grade is " << grade << std::endl;
-    std::cout<<"I am ";
-    if (isMale){
-        std::cout<<"Male";
-    }else{
-        std::cout<<"Female";
+    std::cout << "My name is " << name << std::endl;
+    std::cout << "I am " << age << " years old." << std::endl;
+    std::cout << "My average grade is " << grade << std::endl;
+    std::cout << "I am ";
+    if (isMale)
+    {
+        std::cout << "Male";
     }
-    std::cout<< std::endl;
-    std::cout<<"My bloodtype is " << bloodType << std::endl;
+    else
+    {
+        std::cout << "Female";
+    }
+    std::cout << std::endl;
+    std::cout << "My bloodtype is " << bloodType << std::endl;
     return 0;
 }
