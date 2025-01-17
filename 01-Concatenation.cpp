@@ -20,6 +20,6 @@ int main()
         std::cout << "Female";
     }
     std::cout << std::endl;
-    std::cout << "My bloodtype is " << bloodType << std::endl;
+    std::cout << "My blood type is " << bloodType << std::endl;
     return 0;
 }
