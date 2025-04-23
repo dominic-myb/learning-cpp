@@ -4,10 +4,13 @@
 
 int main()
 {
-	std::string word = "hello";
+	std::string word = "Hello";
 	std::map<char, int> frequency;
 	for(char c: word){
-		frequency[c]++;
+		if (c != ' '){
+			c = tolower(c);
+			frequency[c]++;
+		}
 	}
 	
 	for(auto pair : frequency){
