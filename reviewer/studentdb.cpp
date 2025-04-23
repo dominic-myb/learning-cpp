@@ -121,7 +121,6 @@ int main() {
     s.setAge(age);
     s.setGrade(grade);
     student.push_back(s);
-    //    std::cout << std::endl;
   }
   saveStudent(filePath, student);
   std::cout << "Enter grade threshold: ";
