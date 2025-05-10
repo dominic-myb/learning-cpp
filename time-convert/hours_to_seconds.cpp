@@ -1,4 +1,11 @@
+/*
+ * Author: Dominic Esguerra
+ * Last update: May. 11, 2025
+ * Description: Convert Hours to Seconds
+ */
+
 #include <iostream>
+#include <limits>
 #include <string>
 
 std::string convert(int hours) {
@@ -6,6 +13,12 @@ std::string convert(int hours) {
 }
 
 int main() {
-  std::cout << convert(20);
+  int hours;
+  std::cout << "Hours: ";
+  while (!(std::cin >> hours)) {
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<int>::max(), '\n');
+  }
+  std::cout << convert(hours);
   return 0;
 }
