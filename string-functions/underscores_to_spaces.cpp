@@ -1,16 +1,21 @@
+/*
+ * Author: Dominic Esguerra
+ * Last update: May. 12, 2025
+ * Description: Convert spaces to underscores
+ */
+
 #include <iostream>
 #include <string>
 
 std::string spaceToUnderscore(const std::string &s) {
-  std::string res = "";
+  std::string result = "";
   for (char c : s) {
-    if (c == ' ') {
-      res += '_';
-    } else {
-      res += c;
-    }
+    if (c == ' ')
+      result += '_';
+    else
+      result += c;
   }
-  return res;
+  return result;
 }
 
 int main() {
