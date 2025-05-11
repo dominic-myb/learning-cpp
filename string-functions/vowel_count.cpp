@@ -1,3 +1,9 @@
+/*
+ * Author: Dominic Esguerra
+ * Last update: May. 12, 2025
+ * Description: Outputs number of vowels in a string
+ */
+
 #include <cctype>
 #include <iostream>
 #include <string>
@@ -8,13 +14,13 @@ bool isVowel(const char &c) {
 }
 
 int vowelCount(const std::string &word) {
-  int res = 0;
+  int result = 0;
   for (char c : word) {
     if (isVowel(c)) {
-      res++;
+      result++;
     }
   }
-  return res;
+  return result;
 }
 
 int main() {
