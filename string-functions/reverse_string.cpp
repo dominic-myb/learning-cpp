@@ -1,12 +1,18 @@
+/*
+ * Author: Dominic Esguerra
+ * Last update: May. 12, 2025
+ * Description: Reverses a String
+ */
+
 #include <iostream>
 #include <string>
 
 std::string reverseString(const std::string &s) {
-  std::string reverseString = "";
+  std::string result = "";
   for (int i = s.length() - 1; i >= 0; i--) {
-    reverseString += s[i];
+    result += s[i];
   }
-  return reverseString;
+  return result;
 }
 
 int main() {
